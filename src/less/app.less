@@ -1,0 +1,75 @@
+.App {
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 3rem;
+  .section1 {
+    // border: solid red;
+    padding-top: 2rem;
+    width: 50%;
+    @media @small {
+        width: 100%;
+    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      color: black;
+      font-style: italic;
+    }
+    p.mission {
+      font-size: 1.5rem;
+    }
+    p.mission_description {
+      // border: solid pink;
+      width: 50%;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .section2 {
+    margin-bottom: 5rem;
+    img {
+      //   border: solid blue;
+      width: 95%;
+      @media @large {
+        padding-top: 3rem;
+      }
+      @media @medium {
+          padding-top: 6rem;
+      }
+      @media @small {
+          display: none
+      }
+    }
+    width: 50%;
+    @media @small {
+        width: 0px;
+    }
+  }
+}
+.hidden {
+    display: none;
+    @media @small {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        img {
+            width: 92%;
+        }
+    }
+}
+footer {
+    margin-top: 5rem;
+    p {
+        text-align: center;
+    }
+  }
